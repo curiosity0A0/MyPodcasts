@@ -8,11 +8,13 @@
 
 import Foundation
 
-struct Podcast {
+struct Podcast:Decodable {
     
-    let name: String
-    let artistName: String
-    
+    var trackName: String?
+    var artistName: String?
+    var artworkUrl600:String?
+    var trackCount: Int?
+    var feedUrl: String?
 }
 
 
